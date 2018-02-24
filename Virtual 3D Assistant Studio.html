@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Virtual 3D Assistant Studio </title>
+    <meta charset="utf-8">
+    <meta name="Virtual 3D Assistant Studio" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #1d4580;
+            overflow: auto;
+        }
+        canvas { width: 90%; height: 20% }
+        #my-gui-container{
+            position: absolute;
+            top:142px;
+            left: 3px;
+            color: #f4f0e5;
+        }
+        #headings{
+            background-color: #1d4580;
+            color: #f4f0e5;
+            font-family:futura;
+            text-align:center;
+        }
+        #hint{
+            background-color: #1d4580;
+            color: #f4f0e5;
+            font-family:futura;
+            text-align:center;
+        }
+
+        #others{
+            background-color: #1d4580;
+            color: 	#6d84b4;
+
+            text-align:center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div id="headings">
+    <h1>Virtual 3D Assistant Studio</h1>
+    <p>An interactive 3D studio. You can create your own 3D scene by setting object, light and camera attributes.</p>
+    <br>
+</div>
+
+    <div id="my-gui-container"></div>
+
+    <script src="library/three.js"></script>
+    <script src="library/Detector.js"></script>
+    <script src="library/dat.gui.min.js"></script>
+    <script src="library/OrbitControls.js"></script>
+
+    <script src="main.js"></script>
+
+   <!-- <div id="camera" name="view" onclick="changeViewing()">
+        Change Viewing:
+        <input type="radio" name="viewType" id= "Type" value="1" checked> Orthogonal
+        <input type="radio" name="viewType" value="2"> Perspective
+
+    </div>-->
+
+    <div id="hint">
+        <h3> ~~~~~~ HINTS ~~~~~~ </h3>
+        <p> You can use mouse wheel to zoom in/out the scene. </p>
+        <h3> ~~~~~~~~~~~~~~~~~~ </h3>
+    </div>
+
+    <div id="others">
+        <br>
+        <br>
+        ---------------------------------------------------------------------------------------------------------------
+        <p>All objects, light sources and texture images are from THREE library</p>
+        <p>Version: 1.5</p>
+        <br>
+        <p>Author: Shiyu Xie</p>
+        <p>Email: sy.xie.2015@gmail.com</p>
+        ---------------------------------------------------------------------------------------------------------------
+        <br>
+        <br>
+    </div>
+</body>
+</html>
