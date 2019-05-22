@@ -1,6 +1,6 @@
 # virtual-3d-assistant-studio
 
-A practice to get familiar with three.js library. 
+A helper for understanding the lighting material interaction. 
 
 Access Link: https://shiyuxie.github.io/virtual-3d-assistant-studio/
 
